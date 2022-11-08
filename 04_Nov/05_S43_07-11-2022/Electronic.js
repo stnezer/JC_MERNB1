@@ -19,6 +19,7 @@ function getElectronicData() {
       console.log(actualData);
       createCard(result);
     });
+<<<<<<< Updated upstream
 }
 
 function createCard(data) {
@@ -41,3 +42,37 @@ function createCard(data) {
     card.appendChild(div);
   });
 }
+=======
+};
+
+// function createCard(data) {
+//   var cardRef = document.getElementById("card");
+//   var div = document.createElement("div");
+//   var img = document.createElement("img");
+//   var h4 = document.createElement("h4");
+//   var p = document.createElement("p");
+//   var p1 = document.createElement("p");
+//   var btn = document.createElement("button");
+
+//   img.src = data[0].image;
+//   img.style.width = "100%";
+//   img.style.height = "200px";
+//   h4.innerText = data[0].title;
+//   p.innerText = "$ " + data[0].price;
+//   p1.innerText = data[0].description;
+//   btn.innerText = "More Details";
+//   div.appendChild(img);
+//   div.appendChild(h4);
+//   div.appendChild(p);
+//   div.appendChild(p1);
+//   div.appendChild(btn);
+
+//   div.style.width = "300px";
+
+//   //   div.style.border = "4px solid black";
+//   div.style.boxShadow = "0 0 10px black";
+//   div.style.padding = "30px";
+//   div.style.backgroundColor = "lightgrey";
+//   cardRef.appendChild(div);
+// }
+>>>>>>> Stashed changes
