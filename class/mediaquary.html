@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="padding: 0; margin:0;">
+
+    <style>
+        #parent{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            
+        }
+        #wildscreen, #mediumscreen, #smallscreen, #smallestscreen{
+            border: 2px solid black;
+            margin: auto;
+            width: 20%;
+            height: 300px;
+            background-color: blue;
+
+        }
+
+        @media screen and (min-width: 400px ) and (max-width: 800px ){
+
+            #parent{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap:20px;
+            }
+            #wildscreen, #mediumscreen, #smallscreen, #smallestscreen{
+            border: 2px solid black;
+            margin: auto;
+            width: 45%;
+            height: 200px;
+            background-color: blue;
+
+        }
+
+        @media screen and (min-width: 0px) and (max-width:400px) {
+            
+            #parent{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap:20px;
+                background-color: aqua;
+            }
+            #smallscreen, #smallestscreen{
+                display: none;
+                background-color: yellowgreen;
+            }
+            
+        }
+            
+
+        }
+    </style>
+
+    <div>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+    </div>
+
+
+    <div id="parent">
+        <div id="wildscreen"></div>
+        <div id="mediumscreen"></div>
+        <div id="smallscreen"></div>
+        <div id="smallestscreen"></div>
+    </div>
+    
+</body>
+</html>
